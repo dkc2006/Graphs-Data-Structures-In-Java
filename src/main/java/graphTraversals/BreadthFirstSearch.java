@@ -57,8 +57,8 @@ public class BreadthFirstSearch {
                 System.out.print(current+" ");
                 visited[current] = true;
                 for (int index = 0; index < graph[current].size(); index++) {
-                  Edge edge = graph[current].get(index);
-                  queue.add(edge.destination);
+                    Edge edge = graph[current].get(index);
+                    queue.add(edge.destination);
                 }
             }
         }
